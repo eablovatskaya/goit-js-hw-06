@@ -9,6 +9,4 @@ const elements = ingredients.map((ingredient) => {
   return liEl;
 });
 
-console.log(elements, ulEl);
-
 ulEl.append(...elements);

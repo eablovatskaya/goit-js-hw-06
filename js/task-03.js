@@ -14,14 +14,11 @@ const images = [
 ];
 
 const ulEl = document.querySelector(".gallery");
-console.log(ulEl);
 
 const makeElementsMarkup = (image) => {
   return `<li class = "gallery__item"><img src = ${image.url} alt="${image.alt}"/></li>`;
 };
 
 const makeElements = images.map(makeElementsMarkup).join("");
-console.log(makeElements);
 
 ulEl.insertAdjacentHTML("afterbegin", makeElements);
-console.log(makeElements);

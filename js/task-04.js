@@ -3,7 +3,6 @@ const incrementBtn = document.querySelector('#counter button[data-action="increm
 const spanCount = document.querySelector("#value");
 let counterValue = 0;
 
-console.log(decrementBtn, incrementBtn, spanCount);
 incrementBtn.addEventListener("click", () => {
   counterValue += 1;
   spanCount.textContent = counterValue;
